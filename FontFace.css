@@ -1,12 +1,18 @@
 @font-face {
-    font-family: "Gilroy Bold";
-    src: url("./font-families/Gilroy-Bold.ttf");
+    font-family: "Gilroy Regular";
+    src: url("./font-families/Gilroy-Regular.ttf");
 }
 
 @font-face {
     font-family: "Gilroy Medium";
     src: url("./font-families/Gilroy-Medium.ttf");
 }
+
+@font-face {
+    font-family: "Gilroy Bold";
+    src: url("./font-families/Gilroy-Bold.ttf");
+}
+
 
 @font-face {
     font-family: "Playfair Display Regular";
