@@ -14,6 +14,7 @@
     --head-bold-56: 2.8rem;
     --subhead-regular-32: 1.6rem;
     --subhead-bold-48: 1.6rem;
+    --body-large-32: 2rem;
     --body-medium-24: 1.2rem;
     --body-medium-20: 1rem;
 
@@ -37,13 +38,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.75rem;
 }
 
+h2 {
+    font-size: 3.5rem;
+}
+
 p, span {
     font-family: "Gilroy Medium", sans-serif;
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .headline-1 {
     font-family: var(--Playfair-bold);
+    line-height: 110%;
     font-size: var(--head-bold-80);
     color: var(--black);
 }
@@ -62,6 +73,11 @@ p, span {
 .subhead-bold {
     font-family: var(--gilroy-bold);
     font-size: var(--subhead-bold-48);
+}
+
+.body-XL {
+    font-family: var(--gilroy-medium);
+    font-size: 32px;
 }
 
 .body-large {
@@ -137,6 +153,8 @@ input {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
+    transition: ease-out 0.2s;
 }
 .header {
     display: flex;
@@ -166,12 +184,19 @@ input {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.header a:nth-child(2):hover {
+    background: none;
+}
+
 
 /*HERO SECTION*/
 .hero {
     background: url(./assets/Images/Hero.jpg);
     height: 900px;
     padding-top: 9.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-container {
@@ -183,10 +208,214 @@ input {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 .hero-container h1 {
     color: var(--white);
-    max-width: 704px;
+    max-width: 600px;
     padding-bottom: 1rem;
+}
+
+.hero-container .paginator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.hero-container .page-indicator {
+    width: 32px;
+    height: 4px;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.hero-container .page-indicator:nth-child(1) {
+    opacity: 1;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    gap: 20px;
+}
+
+.navigator .navigator-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid white;
+    border-radius: 100%;
+    transition: background ease-out 0.1s;
+    cursor: pointer;
+}
+
+.navigator .navigator-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Sessão 02 */
+.section {
+    margin: 144px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.image-text-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-text-section img {
+    width: 80%;
+}
+
+.image-text-section .section-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.coffe-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.coffe-grid-title {
+    color: var(--hover);
+}
+
+.coffe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 32px;
+    width: 100%;
+    max-width: 459px;
+    background: #F7F1E6;
+}
+
+.coffe-card .coffe-card-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.coffe-card .coffe-price-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    align-items: center;
+}
+
+.coffe-card .coffe-price-container .coffe-promotional {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.coffe-card .coffe-price-container .coffe-price {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--grey);
+}
+
+.coffe-card .coffe-card-button {
+    background-color: var(--black);
+    height: 76px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 28px;
+    transition: background ease-out 0.2s;
+    cursor: pointer;
+}
+
+.coffe-card .coffe-card-button:hover {
+    background: var(--background);
+    color: var(--black);
+}
+
+.advantages {
+    display: flex;
+    gap: 32px;
+
+}
+
+.advantage {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.advantage span {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.banners {
+    display: flex;
+    gap: 32px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white);
+    padding: 40px;
+    gap: 24px;
+    transition: ease-out 0.2s;
+    cursor: pointer;
+}
+
+.banner:hover {
+    background-position-y: -8px;
+    background-repeat: no-repeat;
+}
+
+.banner p {
+    max-width: 450px;
+}
+
+.banner1 {
+    width: 100%;
+    height: 560px;
+    max-width: 704px;
+    background-image: url('./assets/Images/Catalog.jpg');
+    background-position: cover;
+}
+
+.banner2 {
+    width: 100%;
+    height: 560px;
+    max-width: 704px;
+    background-image: url('./assets/Images/Acessories.jpg');
+    background-position: cover;
 }
