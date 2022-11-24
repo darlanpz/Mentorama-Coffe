@@ -1,173 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles.css">
-    <link rel="stylesheet" href="./FontFace.css">
-    <title>Mentorama Coffe</title>
-</head>
-<body>
-    <header id="navmenu" class="nav-container">
-        <nav class="header">
-            <a href="#">
-                <img src="./assets/Icons/Burger.svg">
-            </a>
-            <a href="#">
-                <h1>Black<i>Coffe</i></h1>
-            </a>
-            <a href="#">
-                <img src="./assets/Icons/Bag.svg">
-            </a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/Styles.css" />
+    <title>Coffe</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <i class="menu"></i>
+        <h1>Black<em>Coffe</em></h1>
+        <i class="shop"></i>
+      </nav>
     </header>
-    <main class="hero">
-        <div class="hero-container">
-            <div class="paginator">
-                <div class="page-indicator"></div>
-                <div class="page-indicator"></div>
-                <div class="page-indicator"></div>
+    <main>
+      <section class="hero-section">
+        <div class="page-indicator">
+          <i class="bar active"></i>
+          <i class="bar"></i>
+          <i class="bar"></i>
+        </div>
+        <h2 class="head-bold-80">
+          Preparamos o melhor café fresco da torra cada dia
+        </h2>
+        <p class="body-medium-24">Entregamos em todo Brasil</p>
+        <div class="pagination">
+          <i class="control"></i>
+          <i class="control"></i>
+        </div>
+      </section>
+      <aside class="cart">
+        <div class="product-selected">
+          <h2>Seus produtos: 1 item</h2>
+          <div class="item-cart">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <p class="promotional">40 R$</p>
+            <a href="#">Excluir</a>
+          </div>
+          <div class="form-control">
+            <i class="close-button"></i>
+            <div class="steps">
+              <span class="step-active">Dados pessoais</span>
+              <i class="arrow"></i>
+              <span>Forma de pagamento</span>
+              <i class="arrow"></i>
+              <span>Concluir</span>
             </div>
-            <h1 class="headline-1">
-                Preparamos o melhor café fresco da torra cada dia
-            </h1>
-            <p class="subhead">
-                Entregamos em todo Brasil
+            <div class="form">
+              <input type="text" name="nome" placeholder="Nome" required />
+              <input
+                type="tel"
+                name="telefone"
+                placeholder="Número do telefone"
+                required
+              />
+              <input type="email" name="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="endereço"
+                placeholder="Endereço de entrega"
+                required
+              />
+              <textarea
+                name="comentarios"
+                cols="30"
+                rows="10"
+                placeholder="Comentários"
+              ></textarea>
+              <button type="submit">Seguinte</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section class="default-section">
+        <img src="./assets/Images/Section-01.jpg" alt="Máquina de capuccino" />
+        <div class="text">
+          <h2 class="subhead-regular-32">Café mágico...</h2>
+          <p class="body-medium-20">
+            Preparado com os melhores ingredientes e com os melhores acessórios,
+            seguindo os métodos tradicionais e os mais modernos.
+          </p>
+        </div>
+      </section>
+      <section class="default-section">
+        <img src="./assets/Images/Section-02.jpg" alt="Xícara de café" />
+        <div class="text">
+          <h2 class="subhead-regular-32">...e muito mais</h2>
+          <p class="body-medium-20">
+            Não esqueça de dar uma olhada em nossa seleção de sobremesas
+            deliciosas!
+          </p>
+        </div>
+      </section>
+      <section class="products-section">
+        <h2 class="subhead-regular-32">Variedades de café</h2>
+        <div class="grid">
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+          <div class="item">
+            <h3>RUANDA UMARAGE NAT</h3>
+            <img src="./assets/Images/Product.png" alt="Pacote de café" />
+            <div class="prices">
+              <p class="promotional">40 R$</p>
+              <p>60 R$</p>
+            </div>
+            <button>+ adicionar ao carrinho</button>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="advantage">
+          <img src="./assets/Icons/Truck.svg" />
+          <span
+            >Enrega <br />
+            gratuíta</span
+          >
+        </div>
+        <div class="advantage">
+          <img src="./assets/Icons/Coffe.svg" />
+          <span
+            >Pagamento <br />
+            na entrega</span
+          >
+        </div>
+        <div class="advantage">
+          <img src="./assets/Icons/Wallet.svg" />
+          <span
+            >Política <br />
+            de reembolso</span
+          >
+        </div>
+        <div class="advantage">
+          <img src="./assets/Icons/Discount.svg" />
+          <span
+            >Sistema de descontos <br />
+            acumuláveis</span
+          >
+        </div>
+        <div class="advantage">
+          <img src="./assets/Icons/Gift.svg" />
+          <span
+            >Presente por cada <br />
+            6 caixas de café</span
+          >
+        </div>
+      </section>
+      <section class="menu-section">
+        <a href="#">
+          <div class="menu">
+            <h2 class="head-bold-56">Catalogo de cafés</h2>
+            <p class="body-medium-24">
+              Mais de 50 tipos de café fresco da torra para qualquer método de
+              preparo
             </p>
-            <div class="navigator">
-                <div class="navigator-button">
-                    <img src="./assets/Icons/Arrow-Left.svg">
-                </div>
-                <div class="navigator-button">
-                    <img src="./assets/Icons/Arrow-Right.svg">
-                </div>
-            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="menu">
+            <h2 class="head-bold-56">Acessórios</h2>
+            <p class="body-medium-24">
+              Todo o que a gente precisa para preparar um café saboroso em casa
+            </p>
+          </div>
+        </a>
+      </section>
+      <section class="map-section">
+        <h2>Encontre uma loja</h2>
+        <div class="form">
+          <select name="cidade" id="cidade">
+            <option value="são borja">São Borja</option>
+          </select>
+          <input type="text" placeholder="Digite o endereço" />
         </div>
+        <div class="map"></div>
+      </section>
     </main>
-    <section class="section">
-        <div class="image-text-section">
-            <img src="./assets/Images/Section-01.jpg" alt="Café sendo servido de uma máquna">
-            <div class="section-text-content">
-                <h2>Café magico...</h2>
-                <p class="body-XL">Preparado com os melhores ingredientes e com os melhores acessórios, seguindo os métodos tradicionais e os mais modernos.</p>
-            </div>
+    <footer>
+      <div class="footer-container">
+        <h2>Black<em>Coffe</em></h2>
+        <div class="footer-column">
+          <h3>Institucional</h3>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Certificados</a></li>
+            <li><a href="#">Nossa produção</a></li>
+            <li><a href="#">Programas de parceiros</a></li>
+          </ul>
         </div>
-    </section>
-    <section class="section">
-        <div class="image-text-section reverse">
-            <img src="./assets/Images/Section-02.jpg" alt="Café na caneca visto de cima">
-            <div class="section-text-content">
-                <h2>...e muito mais</h2>
-                <p class="body-XL">Não esqueça de dar uma olhada em nossa seleção de sobremesas deliciosas!</p>
-            </div>
+        <div class="footer-column">
+          <h3>Produtos</h3>
+          <ul>
+            <li><a href="#">Café</a></li>
+            <li><a href="#">Té</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Ofertas</a></li>
+          </ul>
         </div>
-    </section>
-    <section class="section">
-        <h2 class="coffe-grid-title">Variedades de café</h2>
-        <div class="coffe-grid-section">
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
-            <div class="coffe-card">
-                <p class="coffe-card-title">RUANDA UMARAGE NAT</p>
-                <img src="./assets/Images/Product.png" alt="Pacote de Café">
-                <div class="coffe-price-container">
-                    <span class="coffe-promotional">40 R$</span>
-                    <span class="coffe-price">60 R$</span>
-                </div>
-                <button class="coffe-card-button">
-                    + adicionar ao carrinho
-                </button>
-            </div>
+        <div class="footer-column">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/Icons/Instagram.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/Icons/Twitter.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/Icons/Facebook.svg" /></a>
+            </li>
+          </ul>
         </div>
-    </section>
-    <section class="section">
-        <div class="advantages">
-            <div class="advantage">
-                <img src="./assets/Icons/Truck.svg">
-                <span>Entrega</br>gratuita</span>
-            </div>
-            <div class="advantage">
-                <img src="./assets/Icons/Coffe.svg">
-                <span>Pagamento</br>na entrega</span>
-            </div>
-            <div class="advantage">
-                <img src="./assets/Icons/Wallet.svg">
-                <span>Política</br>de reembolso</span>
-            </div>
-            <div class="advantage">
-                <img src="./assets/Icons/Discount.svg">
-                <span>Sistema de descontos acumuláveis</span>
-            </div>
-            <div class="advantage">
-                <img src="./assets/Icons/Gift.svg">
-                <span>Presente por cada</br>6 caixas de café</span>
-            </div>
-        </div>
-        <div class="banners">
-            <div href="#" class="banner banner1">
-                <h2>Catálogo de cafés</h2>
-                <p class="body-large">Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p>
-            </div>
-            <div href="#" class="banner banner2">
-                <h2>Acessórios</h2>
-                <p class="body-large">Todo o que a gente precisa para preparar um café saboroso em casa<p>
-            </div>
-        </div>
-    </section>
-    <script src="./scripts.js"></script>
-</body>
+      </div>
+      <div class="mentorama">
+        <span>designed by <b>mentorama</b></span>
+      </div>
+    </footer>
+  </body>
 </html>
