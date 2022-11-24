@@ -29,7 +29,7 @@ a {
   font-size: 80px;
   font-family: var(--primary-font);
   font-weight: 700;
-  line-height: 80px;
+  line-height: 110%;
 }
 .head-bold-56 {
   font-size: 56px;

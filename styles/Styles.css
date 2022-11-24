@@ -1,45 +1,165 @@
-/* NAVBAR
-.nav-container {
+/*navbar*/
+
+header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   transition: ease-out 0.2s;
+  color: var(--white);
+  background: black;
 }
-.header {
+
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 0 48px;
+  height: 80px;
 }
 
-.header h1 {
+header nav i {
+  padding: 24px;
+  border-radius: 50%;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  position: relative;
+}
+
+header nav i.menu {
+  background-image: url(../assets/Icons/Burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+header nav i.menu:hover {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+header nav i.menu:hover::after {
+  content: "Menu";
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 24px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 48px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+header nav i.shop {
+  background-image: url(../assets/Icons/Bag.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+header nav i.shop:hover {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+header nav i.shop:hover::after {
+  content: "Carrinho";
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 24px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 48px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+header h1,
+header h1 em {
+  font-family: var(--primary-font);
+  cursor: pointer;
+}
+
+/* Hero-Section */
+
+section.hero-section {
+  padding: 128px 48px 48px;
+  background-image: url(../assets/Images/Hero.jpg);
   color: var(--white);
 }
 
-.header a {
+section.hero-section .page-indicator {
   display: flex;
-  height: 48px;
-  width: 48px;
+  gap: 8px;
   align-items: center;
-  justify-content: center;
-  border-radius: 100%;
+}
+
+section.hero-section .page-indicator .bar {
+  width: 48px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.hero-section .page-indicator .active {
+  background-color: var(--white);
+}
+
+section.hero-section h2 {
+  margin: 12px 0 48px;
+  width: 100%;
+  max-width: 700px;
+}
+
+section.hero-section .pagination {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+section.hero-section .pagination i.control {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   transition: 0.2s ease-out;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid var(--white);
+  margin-top: 136px;
 }
 
-.header a:hover {
-  background: rgba(255, 255, 255, 0.2);
+section.hero-section .pagination .control:first-child {
+  background-image: url(../assets/Icons/Arrow-Left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 7px;
+  background-position-y: 8px;
+}
+section.hero-section .pagination i.control:first-child:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position-x: 2px;
 }
 
-.header a:nth-child(2):hover {
-  background: none;
+section.hero-section .pagination .control:last-child {
+  background-image: url(../assets/Icons/Arrow-Right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 8px;
+  background-position-y: 6px;
+}
+section.hero-section .pagination i.control:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position-x: 13px;
 }
 
-
+/*
 .hero {
   background: url(./assets/Images/Hero.jpg);
   height: 900px;
