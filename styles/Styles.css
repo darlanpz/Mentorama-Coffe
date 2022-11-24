@@ -92,6 +92,8 @@ header h1 em {
 section.hero-section {
   padding: 128px 48px 48px;
   background-image: url(../assets/Images/Hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--white);
 }
 
